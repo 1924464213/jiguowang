@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>注册极果</title>
+    <link rel="stylesheet" href="./zhuce.css">
+    <link rel="icon" href="./试用/img/logonew.png" type="image/png">
+
+</head>
+
+<body>
+    <header>
+        <div class="head">
+            <div class="logo">
+                <img src="./试用/img/logonew.png" width="132">
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="./首页/shouye.html">首页</a></li>
+                    <li><a href="./酷玩/kuwan.html">酷玩</a></li>
+                    <li><a href="./导购、报告/daogou.html">导购</a></li>
+                    <li><a href="./试用/shiyong.html">试用</a></li>
+                    <li><a href="./导购、报告/baogao.html">报告</a></li>
+                </ul>
+            </nav>
+            <a href="./zhuceye.html" class="login">注册</a>
+            <a href="#" class="search">搜索</a>
+        </div>
+    </header>
+    <section>
+        <div class=" regBox">
+            <h2>注册极果</h2>
+            <form class="regForm" name="my_f1" action="" method="post" onsubmit="return check(this);">
+                <p><input type="text" placeholder="请输入登录手机号" pattern="^1[34578][0-9]{9}$" required="required"
+                        name="tel"></p>
+
+                <p>
+                    <input type="text" placeholder="请输入图片校验码" required="required" name="imgCode">
+                    <img src="./试用/img/k1.jpg" width="132" height="35">
+                </p>
+
+                <p>
+                    <input type="text" placeholder="请输入4位数字验证码" pattern="^\d{4}$" required="required" name="code">
+                    <a href="javascript:void(0)" class="getCode">获取验证码</a>
+                </p>
+
+                <p><input type="text" placeholder="请输入用户名" required="required"></p>
+
+                <p><input type="password" placeholder="请输入新密码" required="required" name="psw1"></p>
+
+                <p><input type="password" placeholder="确定新密码" required="required" name="psw2"></p>
+
+                <p><button>立即注册</button></p>
+            </form>
+        </div>
+    </section>
+    <iframe src="../试用/footer.html" width="100%" height="358"></iframe>
+
+</body>
+
+</html>

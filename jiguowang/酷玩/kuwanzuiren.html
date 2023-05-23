@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>最热</title>
+    <link rel="stylesheet" href="./css/kuwanhot.css">
+    <link rel="icon" href="../试用/img/logonew.png" type="image/png">
+</head>
+
+<body>
+    <!-- 头部 -->
+    <header>
+        <div class="head">
+            <div class="logo">
+                <img src="./img/logonew.png" width="132">
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="../首页/shouye.html">首页</a></li>
+                    <li class="on"><a href="#">酷玩</a></li>
+                    <li><a href="../导购、报告/daogou.html">导购</a></li>
+                    <li><a href="../试用/shiyong.html">试用</a></li>
+                    <li><a href="../导购、报告/baogao.html">报告</a></li>
+                </ul>
+            </nav>
+            <a href="../zhuceye.html" class="login">注册</a>
+            <a href="#" class="search">搜索</a>
+        </div>
+    </header>
+    <!-- 版心 -->
+    <div class="box">
+        <h1>发现酷玩</h1>
+
+        <div class="nav">
+            <a href="./kuwan.html">最新</a>
+            <a href="./kuwanzuiren.html" class="on">最热</a>
+            <a href="./category.html">品类</a>
+        </div>
+
+        <div class="item">
+            <div class="item2">
+                <ul id="zui">
+                    <!-- <li>
+                    <a href="#">
+                        <img src="http://127.0.0.1:5500/%E7%A4%BA%E4%BE%8B01%EF%BC%9A%E6%9E%81%E6%9E%9C%E9%A1%B9%E7%9B%AE%E6%BA%90%E4%BB%A3%E7%A0%81/img/k1.jpg"
+                            alt="">
+                        <div class="ren">
+                            <p class="name">
+                                SCiO 微型光谱仪
+
+                            </p>
+                            <span>可以测定食物成分及营养</span>
+                        </div>
+                        <div class="menoy">
+                            <span class="dollon">￥ 1212</span>
+                            <div class="cang">
+                                <span class="ai">3</span>
+                                <span class="web">3</span>
+                            </div>
+                        </div>
+                    </a>
+                </li> -->
+                </ul>
+                <div class="more">
+                    <img src="http://127.0.0.1:5500/%E7%A4%BA%E4%BE%8B01%EF%BC%9A%E6%9E%81%E6%9E%9C%E9%A1%B9%E7%9B%AE%E6%BA%90%E4%BB%A3%E7%A0%81/css/img/more.png"
+                        alt="" id="dianji">
+                    <span>点击加载更多</span>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <iframe src="../试用/footer.html" width="100%" height="358"></iframe>
+
+</body>
+
+</html>
+<script src="./js/kuwanzuiren.js"></script>
+<script>
+    var tabLi = document.getElementsByClassName('tabLi');
+    var item_ = document.getElementsByClassName('item');
+    for (var i = 0; i < tabLi.length; i++) {
+        tabLi[i].setAttribute('index', i);
+        tabLi[i].onclick = function () {
+            var ind = this.getAttribute('index');
+            for (var j = 0; j < tabLi.length; j++) {
+                tabLi[j].className = 'tabLi';
+                tabLi[ind].className = 'tabLi active';
+            }
+
+            for (var k = 0; k < item_.length; k++) {
+                item_[k].style.display = 'none';
+                item_[ind].style.display = 'block';
+            }
+        }
+    }
+</script>
